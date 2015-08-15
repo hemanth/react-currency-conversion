@@ -9,7 +9,7 @@ React.render(<ExchangeRate from='USD' to='INR' val='100.20'/>,
             document.querySelector('#content'));
 ```
 
-That would result in something like: `6513.8016` makes use of []()
+That would result in something like: `6513.8016` makes use of [fixer](http://fixer.io/)
 
 # contributing
 
