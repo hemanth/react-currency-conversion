@@ -1,0 +1,46 @@
+{
+  "name": "react-currency-conversion",
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "scripts": {
+    "dev-build": "NODE_ENV=development browserify CurrenyConversion.jsx  > public/bundle.js",
+    "prod-build": "NODE_ENV=production browserify CurrenyConversion.jsx | uglifyjs -cm > public/bundle.js",
+    "start": "ecstatic -p 8000 public",
+    "watch": "watchify main.js -o public/bundle.js -dv"
+  },
+  "dependencies": {
+    "babelify": "^6.1.3",
+    "browserify": "^10.2.6",
+    "ecstatic": "~0.8.0",
+    "es6-promise": "^3.0.2",
+    "isomorphic-fetch": "^2.1.1",
+    "react": "~0.13.3",
+    "uglify-js": "^2.4.24",
+    "watchify": "^3.2.3"
+  },
+  "description": "Converts given currency pair and value.",
+  "version": "1.0.0",
+  "main": "CurrenyConversion.jsx",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hemanth/react-currency-conversion.git"
+  },
+  "keywords": [
+    "react",
+    "currecny",
+    "exchange",
+    "rate",
+    "money",
+    "react-component"
+  ],
+  "author": "hemanth.hm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hemanth/react-currency-conversion/issues"
+  },
+  "homepage": "https://github.com/hemanth/react-currency-conversion#readme"
+}
