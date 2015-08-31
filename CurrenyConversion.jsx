@@ -4,10 +4,12 @@ es6Promise.polyfill();
 import fetch from 'isomorphic-fetch'
 
 class CurrenyConversion extends React.Component {
-  constructor () {
-    super()
-    this.state = { val: 0 }
-  }
+  static propTypes = {
+     from: React.PropTypes.string.isRequired,
+     to: React.PropTypes.string.isRequired,
+     val: React.PropTypes.string.isRequired   
+  };
+  state = { val: 0 };
   componentDidMount() {
     var from = this.props.from,
         to = this.props.to,
@@ -26,8 +28,3 @@ class CurrenyConversion extends React.Component {
 
 }
 
-ExchangeRate.propTypes =  {
-  from: React.PropTypes.string.isRequired,
-  to: React.PropTypes.string.isRequired,
-  val: React.PropTypes.string.isRequired
-}
