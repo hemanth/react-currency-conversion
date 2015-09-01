@@ -26,7 +26,7 @@ class CurrenyConversion extends React.Component {
 
 }
 
-ExchangeRate.propTypes =  {
+CurrenyConversion.propTypes =  {
   from: React.PropTypes.string.isRequired,
   to: React.PropTypes.string.isRequired,
   val: React.PropTypes.string.isRequired
