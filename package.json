@@ -22,7 +22,7 @@
     "watchify": "^3.2.3"
   },
   "description": "Converts given currency pair and value.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "CurrenyConversion.jsx",
   "devDependencies": {},
   "repository": {
