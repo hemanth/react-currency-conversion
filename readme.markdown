@@ -1,10 +1,10 @@
-# react-exchange-rate
+# react-currency-conversion
 > Exchange rate for a given currency pair and value.
 
-__Install it:__ `npm install --save react-exchange-rate`
+__Install it:__ `npm install --save react-currency-conversion`
 
 ``` js
-import 'ExchangeRate' from react-exchange-rate
+import 'ExchangeRate' from react-currency-conversion;
 React.render(<ExchangeRate from='USD' to='INR' val='100.20'/>,
             document.querySelector('#content'));
 ```
