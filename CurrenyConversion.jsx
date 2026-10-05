@@ -20,7 +20,7 @@ class CurrenyConversion extends React.Component {
         to   = this.props.to,
         date = this.props.date,
         val  = this.props.val,
-        API  =`http://api.fixer.io/${date}?base=${from}&symbols=${from},${to}`
+        API  =`https://api.fixer.io/${date}?base=${from}&symbols=${from},${to}`
     fetch(API)
     .then(response => response.json())
     .then(data => this.setState({val:data['rates'][to] * val}))
